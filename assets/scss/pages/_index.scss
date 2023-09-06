@@ -1,0 +1,262 @@
+.banner {
+  background-image: url('../assets/images/headerbanner.jpeg');
+  height: 518px;
+  background-size: cover;
+  width: 100%;
+  margin: 0 auto;
+}
+
+
+
+.menu-icon {
+  padding: 30px 0;
+
+  img {
+    width: 80px;
+    height: auto;
+    transition: fill 1s;
+  }
+
+  h5 {
+    color: #030303;
+    text-decoration: none;
+    line-height: 20px;
+  }
+
+  &:hover {
+    background-color: #030303;
+
+    h5 {
+      color: #FBFF22;
+    }
+
+    >img {
+      fill: #FBFF22;
+    }
+  }
+}
+
+.menu-icon img {
+ 
+  /* 添加过渡效果 */
+}
+
+
+.menu-more {
+
+  h5 {
+    font-size: 48px;
+    line-height: 54px;
+  }
+}
+
+
+
+.topic-title {
+  padding: 38px 32px;
+
+  h2 {
+    font-size: 64px;
+  }
+
+  h3 {
+    font-size: 32px;
+  }
+}
+
+
+.recent-card {
+
+  h3 {
+    font-size: 48px;
+    border-bottom: 3px solid #000;
+  }
+
+  >img {
+    width: 100%;
+    height: 255px;
+  }
+}
+
+
+
+.recent-cover {
+  width: 100%;
+  height: 255px;
+  overflow: hidden;
+  object-position: center top;
+
+  img {
+    width: 100%;
+
+  }
+}
+
+.even-list {
+  img {
+    width: 24px;
+  }
+}
+
+.online-cover {
+  height: 317px;
+  background: url(../assets/images/chatgpt.jpeg) no-repeat center center;
+  background-size: cover;
+}
+
+.active-tag {
+  padding: 4px 20px;
+  border: 1px solid #000;
+  border-left: 4px solid #000;
+  display: inline-block;
+
+  &:hover {
+    background-color: #000;
+    border-left: 4px solid #FBFF22;
+  }
+
+  &:hover p {
+    color: #fff;
+  }
+}
+
+.marquee {
+  height: 3em;
+  margin: 0 auto;
+  background-color: #000;
+  position: relative;
+  overflow: hidden;
+
+  p {
+    color: #FBFF22;
+    animation: marqee 15s linear infinite;
+    position: absolute;
+  }
+}
+
+@keyframes marqee {
+  0% {
+    left: 100%;
+    transform: translateX(0%);
+  }
+
+  100% {
+    left: 0;
+    transform: translateX(-100%);
+  }
+}
+
+.topic-sticker {
+  position: absolute;
+  text-align: center;
+  padding: 8px 16px;
+  background-color: #fff;
+  top: -8px;
+  left: 35%;
+  transform: translate(-50%, -50%);
+  transform: rotate(-4deg);
+  transform-origin: top left;
+}
+
+.active-card-2 {
+  transform: rotate(2deg);
+  transform-origin: 0% 0%;
+}
+
+.active-card-3 {
+  transform: rotate(-2deg);
+  transform-origin: 0% 0%;
+}
+
+.active-card-4 {
+  transform: rotate(1deg);
+  transform-origin: 0% 0%;;
+}
+
+.active-img {
+  width: 100%;
+  height: 274px;
+  object-fit: cover;
+
+}
+
+.social-list {
+  img {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.slogan {
+  h2 {
+    font-size: 32px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .menu-icon {
+    padding: 20px 0;
+    margin-bottom: 8px;
+
+    img {
+      width: 40px;
+      height: auto;
+    }
+
+    h5 {
+      color: #030303;
+      text-decoration: none;
+      line-height: 24px;
+    }
+  };
+
+  .menu-more {
+    margin-bottom: 8px;
+
+    // line-height: 64px;
+    h5 {
+      font-size: 24px;
+      line-height: 33px;
+
+    }
+  };
+
+  .topic-title {
+    padding: 16px 12px;
+
+    h2 {
+      font-size: 24px;
+    }
+
+    h3 {
+      font-size: 16px;
+    }
+  };
+
+  .recent-card {
+
+    h3 {
+      font-size: 32px;
+    }
+
+    >img {
+      width: 100%;
+      height: 100%;
+    }
+  };
+  .slogan {
+    h2 {
+      font-size: 18px;
+    }
+
+    p {
+      font-size: 14px;
+    }
+  }
+
+}
