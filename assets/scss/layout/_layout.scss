@@ -1,0 +1,10 @@
+.pagination-custom-style{
+    .page-link{
+        margin-right:16px;
+        &:hover{
+            background-color: #030303 !important;
+            color: #fff !important;
+        }
+    }
+   
+}
